@@ -1,0 +1,1 @@
+$wnd.com_vical_minibanco_AppWidgetSet.runAsyncCallback2('hdb(1595,1,F$d);_.vc=function pgc(){A1b((!t1b&&(t1b=new F1b),t1b),this.a.d)};eUd(Th)(2);\n//# sourceURL=com.vical.minibanco.AppWidgetSet-2.js\n')

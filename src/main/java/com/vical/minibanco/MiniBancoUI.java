@@ -11,6 +11,6 @@ public class MiniBancoUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-    	
+    System.out.println("Hi Local Minibanco!");
     }
 }

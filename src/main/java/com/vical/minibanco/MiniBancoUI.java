@@ -17,11 +17,6 @@ public class MiniBancoUI extends UI {
     	CssLayout layout = new CssLayout();
     	setContent(layout);
     	Label label = new Label("Hi Local Minibanco!");
-    	layout.addComponent(label);
-    	
-    	
-    	
-    	
-    	
+    	layout.addComponent(label);    	
     }
 }

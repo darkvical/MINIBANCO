@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import com.vical.minibanco.util.Constantes;
 
 @Entity
-@Table(name="tbl_usuario", schema = Constantes.SCHEMA.MINIBANCO) //  "BDMINIBANCO"
+@Table(name="TBL_USUARIO", schema = Constantes.SCHEMA.MINIBANCO) //  "BDMINIBANCO"
 public class Usuario extends Base {	
 	private static final long serialVersionUID = 1188300254105871798L;
 	

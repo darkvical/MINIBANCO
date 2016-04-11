@@ -9,6 +9,9 @@
 		<property name="format_sql">false</property>
 		<property name="use_sql_comments">true</property>
 				
-		<mapping class = "com.vical.minibanco.domain.Usuario"/>				
+		<mapping class = "com.vical.minibanco.domain.Usuario"/>
+		<mapping class = "com.vical.minibanco.domain.Lista"/>
+		<mapping class = "com.vical.minibanco.domain.Valor"/>
+		<mapping class = "com.vical.minibanco.domain.Persona"/>
 	</session-factory>
 </hibernate-configuration>

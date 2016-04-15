@@ -22,11 +22,14 @@ public class ProSolicitar extends Base {
 	private Long id;
 	@ManyToOne
 	@JoinColumn(name="PERSONA")
-	private Long persona;
-	private Long subproducto;
+	private Persona persona;
+	@ManyToOne
+	@JoinColumn(name="SUBPRODUCTO")
+	private SubProducto subproducto;
 	private Date vigencia;
-	private Long estado;
-	
+	@ManyToOne
+	@JoinColumn(name="ESTADO")
+	private Valor estado;
 	
 	public Long getId() {
 		return id;
@@ -34,16 +37,16 @@ public class ProSolicitar extends Base {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public Long getPersona() {
+	public Persona getPersona() {
 		return persona;
 	}
-	public void setPersona(Long persona) {
+	public void setPersona(Persona persona) {
 		this.persona = persona;
 	}
-	public Long getSubproducto() {
+	public SubProducto getSubproducto() {
 		return subproducto;
 	}
-	public void setSubproducto(Long subproducto) {
+	public void setSubproducto(SubProducto subproducto) {
 		this.subproducto = subproducto;
 	}
 	public Date getVigencia() {
@@ -52,11 +55,10 @@ public class ProSolicitar extends Base {
 	public void setVigencia(Date vigencia) {
 		this.vigencia = vigencia;
 	}
-	public Long getEstado() {
+	public Valor getEstado() {
 		return estado;
 	}
-	public void setEstado(Long estado) {
+	public void setEstado(Valor estado) {
 		this.estado = estado;
 	}
-	
 }

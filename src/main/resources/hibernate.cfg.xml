@@ -13,5 +13,6 @@
 		<mapping class = "com.vical.minibanco.domain.Valor"/>
 		<mapping class = "com.vical.minibanco.domain.Persona"/>
 		<mapping class = "com.vical.minibanco.domain.ProSolicitar"/>
+		<mapping class = "com.vical.minibanco.domain.SubProducto"/>
 	</session-factory>
 </hibernate-configuration>

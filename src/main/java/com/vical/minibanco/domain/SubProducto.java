@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.vical.minibanco.util.Constantes;
@@ -20,7 +22,10 @@ public class SubProducto extends Base {
 	private String subproducto;
 	private BigDecimal monto;
 	private Integer plazo;
-	private Long producto;
+	
+	@ManyToOne
+	@JoinColumn(name="PRODUCTO")
+	private Producto producto;
 	public Long getId() {
 		return id;
 	}
@@ -51,12 +56,6 @@ public class SubProducto extends Base {
 	public void setPlazo(Integer plazo) {
 		this.plazo = plazo;
 	}
-	public Long getProducto() {
-		return producto;
-	}
-	public void setProducto(Long producto) {
-		this.producto = producto;
-	} 
 	
 	
 }

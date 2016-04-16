@@ -16,7 +16,7 @@ public class Persona extends Base {
 
 	@Id
 	@Column(name="ID")
-	private Long id;	
+	private Long id;
 	private String nombres;
 	private String paterno;
 	private String materno;
